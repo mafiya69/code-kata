@@ -8,7 +8,7 @@ using namespace std;
 void getLines(vector<string>& linesVec_, ifstream& inFile_)
 {
 	string line;
-	while (getline(inFile_, line) && !line.empty())
+	while (getline(inFile_, line))
 	{
 		linesVec_.push_back(line);
 	}
