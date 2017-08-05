@@ -1,9 +1,6 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
+using ll = long long;
 
 void getLines(vector<string>& linesVec_, ifstream& inFile_)
 {
@@ -24,24 +21,7 @@ void printLines(vector<string>& linesVec_)
 
 int main(int argc, char* argv[])
 {
-	if (2 != argc)
-	{
-		cout << "Wrong argument\nUsage: " << argv[0] << " file\n";
-		return 1;
-	}
+	ifstream fdict = 
 	
-	ifstream inFile(argv[1]);
-	if (!inFile)
-	{
-		cout << "Cannot open input file " << argv[1] << "\n";
-		return 1;
-	}
-	
-	vector<string> linesVec;
-	getLines(linesVec, inFile);
-	
-	printLines(linesVec);
-	
-	inFile.close();
 	return 0;
 }
